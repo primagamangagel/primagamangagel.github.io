@@ -93,9 +93,9 @@ a {
 	transition: .3s;
 }
 
-.tampilSd {
+.tampilSd, .tampilSmp {
 	width: auto;
-	height: 250px;
+	height: 300px;
 	padding: 30px;
 	margin-left: 450px;
 	margin-top: 120px;
@@ -103,6 +103,11 @@ a {
 	list-style-position: inside;
 	border-radius: 30px;
 	animation: faspel 1s ease-in;
+}
+
+.tampilSmp {
+	width: 450px;
+	height: 350px;
 }
 
 td {

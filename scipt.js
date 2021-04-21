@@ -207,10 +207,192 @@ prevDua.addEventListener ('click', function() {
 
 const smp = document.querySelector('.smp');
 
+smp.addEventListener('mouseenter', function() {
+	const hoverTiga = document.querySelector('.smp');
+	hoverTiga.classList.toggle('hover');
+})
+
+smp.addEventListener('mouseleave', function() {
+	const hoverTiga = document.querySelector('.smp');
+	hoverTiga.classList.toggle('hover');
+})
+
 smp.addEventListener ('click', function() {
 		const tampil = document.querySelector('.progsmp');
 		tampil.classList.toggle('tampil');
+		const tampilSmp = document.querySelector('.sembilan');
+		tampilSmp.classList.toggle('tampilSmp');
+		tampilSmp.style.backgroundColor = 'lightblue';
 	})
+
+const closeTiga = document.getElementsByClassName('close')[3];
+
+closeTiga.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeTiga.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeTiga.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsmp');
+		tampil.classList.toggle('tampil');
+		const tampilSmp = document.querySelector('.sembilan');
+		tampilSmp.classList.toggle('tampilSmp');
+})
+
+const nextTiga = document.getElementsByClassName('next')[3];
+
+nextTiga.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextTiga.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextTiga.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.sembilan');
+		tampilEnam.classList.toggle('tampilSmp');
+		const tampilSmp = document.querySelector('.delapan');
+		tampilSmp.classList.toggle('tampilSmp');
+		tampilSmp.style.backgroundColor = 'salmon';
+	})
+
+const prevTiga = document.getElementsByClassName('prev')[3];
+
+prevTiga.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevTiga.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevTiga.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.sembilan');
+		tampilEnam.classList.toggle('tampilSmp');
+		const tampilSmp = document.querySelector('.tujuh');
+		tampilSmp.classList.toggle('tampilSmp');
+		tampilSmp.style.backgroundColor = 'orange';	
+})		
+
+// AKHIR 9 SMP
+
+// AWAL KELAS 8 SMP
+
+const closeEmpat = document.getElementsByClassName('close')[4];
+
+closeEmpat.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeEmpat.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeEmpat.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsmp');
+		tampil.classList.toggle('tampil');
+		const tampilSmp = document.querySelector('.delapan');
+		tampilSmp.classList.toggle('tampilSmp');
+})
+
+const nextEmpat = document.getElementsByClassName('next')[4];
+
+nextEmpat.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextEmpat.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextEmpat.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.delapan');
+		tampilEnam.classList.toggle('tampilSmp');
+		const tampilSmp = document.querySelector('.tujuh');
+		tampilSmp.classList.toggle('tampilSmp');
+		tampilSmp.style.backgroundColor = 'salmon';
+	})
+
+const prevEmpat = document.getElementsByClassName('prev')[4];
+
+prevEmpat.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevEmpat.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevEmpat.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.delapan');
+		tampilEnam.classList.toggle('tampilSmp');
+		const tampilSmp = document.querySelector('.sembilan');
+		tampilSmp.classList.toggle('tampilSmp');
+		tampilSmp.style.backgroundColor = 'orange';	
+})		
+
+// AKHIR KELAS 8 SMP
+
+// AWAL KELAS 7 SMP
+
+const closeLima = document.getElementsByClassName('close')[5];
+
+closeLima.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeLima.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeLima.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsmp');
+		tampil.classList.toggle('tampil');
+		const tampilSmp = document.querySelector('.tujuh');
+		tampilSmp.classList.toggle('tampilSmp');
+})
+
+const nextLima = document.getElementsByClassName('next')[5];
+
+nextLima.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextLima.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextLima.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.tujuh');
+		tampilEnam.classList.toggle('tampilSmp');
+		const tampilSmp = document.querySelector('.sembilan');
+		tampilSmp.classList.toggle('tampilSmp');
+		tampilSmp.style.backgroundColor = 'salmon';
+	})
+
+const prevLima = document.getElementsByClassName('prev')[5];
+
+prevLima.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevLima.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevLima.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.tujuh');
+		tampilEnam.classList.toggle('tampilSmp');
+		const tampilSmp = document.querySelector('.delapan');
+		tampilSmp.classList.toggle('tampilSmp');
+		tampilSmp.style.backgroundColor = 'orange';	
+})		
+
+// AKHIR KELAS 7 SMP
 
 const sma = document.querySelector('.sma');
 
