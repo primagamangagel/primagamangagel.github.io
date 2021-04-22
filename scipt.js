@@ -314,7 +314,7 @@ nextEmpat.addEventListener ('click', function() {
 		tampilEnam.classList.toggle('tampilSmp');
 		const tampilSmp = document.querySelector('.tujuh');
 		tampilSmp.classList.toggle('tampilSmp');
-		tampilSmp.style.backgroundColor = 'salmon';
+		tampilSmp.style.backgroundColor = 'orange';
 	})
 
 const prevEmpat = document.getElementsByClassName('prev')[4];
@@ -332,7 +332,7 @@ prevEmpat.addEventListener ('click', function() {
 		tampilEnam.classList.toggle('tampilSmp');
 		const tampilSmp = document.querySelector('.sembilan');
 		tampilSmp.classList.toggle('tampilSmp');
-		tampilSmp.style.backgroundColor = 'orange';	
+		tampilSmp.style.backgroundColor = 'lightblue';	
 })		
 
 // AKHIR KELAS 8 SMP
@@ -371,7 +371,7 @@ nextLima.addEventListener ('click', function() {
 		tampilEnam.classList.toggle('tampilSmp');
 		const tampilSmp = document.querySelector('.sembilan');
 		tampilSmp.classList.toggle('tampilSmp');
-		tampilSmp.style.backgroundColor = 'salmon';
+		tampilSmp.style.backgroundColor = 'lightblue';
 	})
 
 const prevLima = document.getElementsByClassName('prev')[5];
@@ -389,14 +389,233 @@ prevLima.addEventListener ('click', function() {
 		tampilEnam.classList.toggle('tampilSmp');
 		const tampilSmp = document.querySelector('.delapan');
 		tampilSmp.classList.toggle('tampilSmp');
-		tampilSmp.style.backgroundColor = 'orange';	
+		tampilSmp.style.backgroundColor = 'salmon';	
 })		
 
 // AKHIR KELAS 7 SMP
+// ===========================================================
+// AWAL JENJANG SMA
 
 const sma = document.querySelector('.sma');
 
-sma.addEventListener ('click', function() {
+sma.addEventListener ('mouseenter', function(e) {
+	e.target.classList.toggle('hover');
+	const jurusan = document.querySelectorAll('.jurusan');
+	jurusan.forEach(function(pil){
+		pil.classList.toggle('tampilJurusan');
+		pil.classList.toggle('ips');
+		pil.classList.toggle('ipa');
+	})
+})
+
+sma.addEventListener ('mouseleave', function(e) {
+	e.target.classList.toggle('hover');
+	const jurusan = document.querySelectorAll('.jurusan');
+	jurusan.forEach(function(pil){
+		pil.classList.toggle('tampilJurusan');
+		pil.classList.toggle('ipa');
+		pil.classList.toggle('ips');
+	})
+})
+
+const ipa = document.querySelector('.ipa');
+
+ipa.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverJur');
+})
+
+ipa.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverJur');
+})
+
+ipa.addEventListener ('click', function() {
 		const tampil = document.querySelector('.progsma');
 		tampil.classList.toggle('tampil');
+		const tampilipa = document.querySelector('.tigaIpa');
+		tampilipa.classList.toggle('tampilSma');
+		tampilipa.style.backgroundColor = 'lightblue';
 	})
+
+
+const ips = document.querySelector('.ips');
+
+ips.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverJur');
+})
+
+ips.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverJur');
+})
+
+// AWAL 12 IPA
+
+const closeEnam = document.getElementsByClassName('close')[6];
+
+closeEnam.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeEnam.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeEnam.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsma');
+		tampil.classList.toggle('tampil');
+		const tampilSma = document.querySelector('.tigaIpa');
+		tampilSma.classList.toggle('tampilSma');
+})
+
+const nextEnam = document.getElementsByClassName('next')[6];
+
+nextEnam.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextEnam.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextEnam.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.tigaIpa');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.duaIpa');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'salmon';
+	})
+
+const prevEnam = document.getElementsByClassName('prev')[6];
+
+prevEnam.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevEnam.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevEnam.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.tigaIpa');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.satuIpa');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'orange';	
+})		
+
+// AKHIR 12 IPA
+
+// AWAL KELAS 11 IPA
+
+const closeTujuh = document.getElementsByClassName('close')[7];
+
+closeTujuh.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeTujuh.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeTujuh.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsma');
+		tampil.classList.toggle('tampil');
+		const tampilSma = document.querySelector('.duaIpa');
+		tampilSma.classList.toggle('tampilSma');
+})
+
+const nextTujuh = document.getElementsByClassName('next')[7];
+
+nextTujuh.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextTujuh.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextTujuh.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.duaIpa');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.satuIpa');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'orange';
+	})
+
+const prevTujuh = document.getElementsByClassName('prev')[7];
+
+prevTujuh.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevTujuh.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevTujuh.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.duaIpa');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.tigaIpa');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'lightblue';	
+})	
+
+// AKHIR KELAS 11 IPA
+
+// AWAL KELAS 10 IPA
+
+const closeDelapan = document.getElementsByClassName('close')[8];
+
+closeDelapan.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeDelapan.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeDelapan.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsma');
+		tampil.classList.toggle('tampil');
+		const tampilSma = document.querySelector('.satuIpa');
+		tampilSma.classList.toggle('tampilSma');
+})
+
+const nextDelapan = document.getElementsByClassName('next')[8];
+
+nextDelapan.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextDelapan.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextDelapan.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.satuIpa');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.tigaIpa');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'lighblue';
+	})
+
+const prevDelapan = document.getElementsByClassName('prev')[8];
+
+prevDelapan.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevDelapan.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevDelapan.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.satuIpa');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.duaIpa');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'salmon';	
+})	
+
+// AKHIR KELAS 10 IPA
+
+// AKHIR JENJANG SMA
