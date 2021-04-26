@@ -447,6 +447,14 @@ ips.addEventListener('mouseleave', function(e) {
 	e.target.classList.toggle('hoverJur');
 })
 
+ips.addEventListener ('click', function() {
+	const tampil = document.querySelector('.progsma');
+	tampil.classList.toggle('tampil');
+	const tampilipa = document.querySelector('.tigaIps');
+	tampilipa.classList.toggle('tampilSma');
+	tampilipa.style.backgroundColor = 'lightblue';
+})
+
 // AWAL 12 IPA
 
 const closeEnam = document.getElementsByClassName('close')[6];
@@ -617,5 +625,176 @@ prevDelapan.addEventListener ('click', function() {
 })	
 
 // AKHIR KELAS 10 IPA
+
+// AWAL 12 IPS
+
+const closeSembilan = document.getElementsByClassName('close')[9];
+
+closeSembilan.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeSembilan.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeSembilan.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsma');
+		tampil.classList.toggle('tampil');
+		const tampilSma = document.querySelector('.tigaIps');
+		tampilSma.classList.toggle('tampilSma');
+})
+
+const nextSembilan = document.getElementsByClassName('next')[9];
+
+nextSembilan.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextSembilan.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextSembilan.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.tigaIps');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.duaIps');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'salmon';
+	})
+
+const prevSembilan = document.getElementsByClassName('prev')[9];
+
+prevSembilan.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevSembilan.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevSembilan.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.tigaIps');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.satuIps');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'orange';	
+})		
+
+// AKHIR 12 IPS
+
+// AWAL KELAS 11 IPS
+
+const closeSepuluh = document.getElementsByClassName('close')[10];
+
+closeSepuluh.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeSepuluh.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeSepuluh.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsma');
+		tampil.classList.toggle('tampil');
+		const tampilSma = document.querySelector('.duaIps');
+		tampilSma.classList.toggle('tampilSma');
+})
+
+const mextSepuluh = document.getElementsByClassName('next')[10];
+
+mextSepuluh.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+mextSepuluh.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+mextSepuluh.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.duaIps');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.satuIps');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'orange';
+	})
+
+const prevSepuluh = document.getElementsByClassName('prev')[10];
+
+prevSepuluh.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevSepuluh.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevSepuluh.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.duaIps');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.tigaIps');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'lightblue';	
+})	
+
+// AKHIR KELAS 11 IPS
+
+// AWAL KELAS 10 IPS
+
+const closeSebelas = document.getElementsByClassName('close')[11];
+
+closeSebelas.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeSebelas.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverClose');
+})
+
+closeSebelas.addEventListener('click', function() {
+		const tampil = document.querySelector('.progsma');
+		tampil.classList.toggle('tampil');
+		const tampilSma = document.querySelector('.satuIps');
+		tampilSma.classList.toggle('tampilSma');
+})
+
+const nextSebelas = document.getElementsByClassName('next')[11];
+
+nextSebelas.addEventListener('mouseenter', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextSebelas.addEventListener('mouseleave', function(e) {
+	e.target.classList.toggle('hoverNav');
+})
+
+nextSebelas.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.satuIps');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.tigaIps');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'lighblue';
+	})
+
+const prevSebelas = document.getElementsByClassName('prev')[11];
+
+prevSebelas.addEventListener('mouseenter', function(e) {
+		e.target.classList.toggle('hoverNav');
+	})	
+	
+prevSebelas.addEventListener('mouseleave', function(e) {
+		e.target.classList.toggle('hoverNav');
+})	
+	
+prevSebelas.addEventListener ('click', function() {
+		const tampilEnam = document.querySelector('.satuIps');
+		tampilEnam.classList.toggle('tampilSma');
+		const tampilSma = document.querySelector('.duaIps');
+		tampilSma.classList.toggle('tampilSma');
+		tampilSma.style.backgroundColor = 'salmon';	
+})	
+
+// AKHIR KELAS 10 IPS
 
 // AKHIR JENJANG SMA
