@@ -189,6 +189,7 @@ td {
 
 
 
+
 /* RESPONSIVE BREAK POINT */
 @media screen and (max-width: 1100px) {
 	.tampilSd, .tampilSmp, .tampilSma {
@@ -224,6 +225,82 @@ td {
 
 	.fasPel strong {
 		padding-left: 50px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.tampilSd, .tampilSmp, .tampilSma{
+		height: 350px;
+		width: 280px;
+		margin-right: 70px;
+		margin-left: 18px;
+		margin-top: 100px;
+		padding-top: 50px;
+	}
+
+	.fasPel strong {
+		padding-left: 40px;
+	}
+
+	.contHeight {
+		height: 560px;
+		transition: .7s;
+	}
+	.logo {
+		transform: scale(.85);
+		margin-right: 40px;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.tampilSd, .tampilSmp, .tampilSma{
+		margin-right: 70px;
+		margin-left: 40px;
+		margin-top: 120px;
+		padding-top: 50px;
+	}
+
+	.tampilSma {
+		height: 380px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.tampilSd, .tampilSmp, .tampilSma{
+		height: 350px;
+		width: 200px;
+		margin-right: 70px;
+		margin-left: 30px;
+		margin-top: 80px;
+	}
+
+	td {
+		padding: 0;
+	}
+
+	.fasPel span {
+		font-size: smaller;
+	}
+
+	.fasPel strong {
+		font-size: smaller;
+		padding-left: 10px;
+	}
+
+	.contHeight {
+		height: 600px;
+		transition: .7s;
+	}
+
+	.logo {
+		transform: scale(.65);
+		margin-right: 120px;
+		margin-top: 5px;
+	}
+
+	.next, .prev {
+		font-size: smaller;
 	}
 }
 

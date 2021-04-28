@@ -400,6 +400,8 @@ const sma = document.querySelector('.sma');
 
 sma.addEventListener ('mouseenter', function(e) {
 	e.target.classList.toggle('hover');
+	const container = document.querySelector('.container');
+	container.classList.toggle('contHeight');
 	const jurusan = document.querySelectorAll('.jurusan');
 	jurusan.forEach(function(pil){
 		pil.classList.toggle('tampilJurusan');
@@ -410,6 +412,8 @@ sma.addEventListener ('mouseenter', function(e) {
 
 sma.addEventListener ('mouseleave', function(e) {
 	e.target.classList.toggle('hover');
+	const container = document.querySelector('.container');
+	container.classList.toggle('contHeight');
 	const jurusan = document.querySelectorAll('.jurusan');
 	jurusan.forEach(function(pil){
 		pil.classList.toggle('tampilJurusan');
